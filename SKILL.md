@@ -462,7 +462,8 @@ Invokes virtual expert to generate evaluation report in Evaluation Form format.
 - Ready to create final deliverable report
 
 **Automatically executed by Claude** to produce:
-- Evaluation Form sheet with columns: Task, Violated Heuristic, Description (includes recommendation), Screenshot, Severity
+- Evaluation Form sheet with columns: Task (with step numbers), Violated Heuristic, Issue (problem description), Recommendation (solution), Screenshot, Severity
+- Findings sorted by task flow sequence (Step 1, Step 2, etc.)
 - Color-coded severity levels with softer colors for better readability
 - Dropdown validations for consistency
 - All Task entries in bold font
@@ -480,6 +481,6 @@ Task-oriented evaluation template for expert evaluation.
 
 **Provide directly to user when requested.** Template includes:
 - Instructions sheet with task flow planning (includes examples: e-commerce, SaaS, content sites)
-- Evaluation form with columns: Task, Violated Heuristic, Description, Screenshot, Severity
+- Evaluation form with columns: Task (format: Step X: Task name), Violated Heuristic, Issue, Recommendation, Screenshot, Severity
 
-User defines task flow based on their product, then experts record findings while performing each task. Screenshots can be pasted directly in cells or attached separately. Priority is determined later during team planning and ticketing.
+User defines task flow based on their product, then experts record findings while performing each task. Task column uses step numbers (Step 1, Step 2, etc.) for clear flow sequence. Issue and Recommendation are separate columns for better clarity.
